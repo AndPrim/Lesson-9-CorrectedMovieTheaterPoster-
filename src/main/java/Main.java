@@ -1,8 +1,8 @@
-import ru.netelogy.posters.MoviePosters;
+import ru.netology.movieManager.MoviePostersManager;
 
 public class Main {
     public static void main(String[] args) {
-        MoviePosters service = new MoviePosters();
+        MoviePostersManager service = new MoviePostersManager();
     }
 
 }

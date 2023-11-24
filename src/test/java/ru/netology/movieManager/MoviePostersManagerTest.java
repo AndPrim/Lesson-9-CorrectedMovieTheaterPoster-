@@ -9,7 +9,7 @@ class MoviePostersManagerTest {
     MoviePostersManager manager = new MoviePostersManager();
 
     @Test
-    public void emptyPoster(){
+    public void emptyPoster() {
 
         String[] expected = {};
         String[] actual = manager.findAll();
@@ -18,7 +18,7 @@ class MoviePostersManagerTest {
     }
 
     @Test
-    public void addOneMovie(){
+    public void addOneMovie() {
 
         manager.saveMovie("Film1");
 
@@ -29,7 +29,7 @@ class MoviePostersManagerTest {
     }
 
     @Test
-    public void addFiveMovie(){
+    public void addFiveMovie() {
 
         manager.saveMovie("Film1");
         manager.saveMovie("Film2");
@@ -44,7 +44,7 @@ class MoviePostersManagerTest {
     }
 
     @Test
-    public void lastFiveMovie(){
+    public void lastFiveMovie() {
 
         manager.saveMovie("Film1");
         manager.saveMovie("Film2");
@@ -57,8 +57,9 @@ class MoviePostersManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    public void lastOneMovie(){
+    public void lastOneMovie() {
 
         manager.saveMovie("Film1");
         manager.setLimit(1);
@@ -70,7 +71,7 @@ class MoviePostersManagerTest {
     }
 
     @Test
-    public void addFiveMovielastThreeMovie(){
+    public void addFiveMovielastThreeMovie() {
 
         manager.saveMovie("Film1");
         manager.saveMovie("Film2");
@@ -86,7 +87,7 @@ class MoviePostersManagerTest {
     }
 
     @Test
-    public void addFiveMovielastZeroMovie(){
+    public void addFiveMovielastZeroMovie() {
 
         manager.saveMovie("Film1");
         manager.saveMovie("Film2");
@@ -102,7 +103,7 @@ class MoviePostersManagerTest {
     }
 
     @Test
-    public void addZeroMovielastFiveMovie(){
+    public void addZeroMovielastFiveMovie() {
 
 
         manager.setLimit(5);

@@ -1,17 +1,19 @@
 package ru.netology.movieManager;
+
 public class MoviePostersManager {
     private String[] items = new String[0];
 
 
     private int limit;
 
-    public MoviePostersManager(){
+    public MoviePostersManager() {
         this.limit = 5;
     }
 
-    public MoviePostersManager(int Limit){
+    public MoviePostersManager(int Limit) {
         this.limit = limit;
     }
+
     public int getLimit() {
         return limit;
     }
